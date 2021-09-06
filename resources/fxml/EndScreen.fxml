@@ -1,0 +1,278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: midnightblue;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.EndScreenController">
+   <children>
+      <Label fx:id="lblCongratulations" layoutX="125.0" layoutY="3.0" text="Congratulations!!">
+         <font>
+            <Font name="Brush Script MT Italic" size="64.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="0.7026378896882494" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="1.0" green="0.39814814925193787" blue="0.8796296119689941" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="1.0" green="0.39814814925193787" blue="0.8796296119689941" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="0.9941428303718567" blue="0.5899999737739563" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Label>
+      <Label fx:id="lblYouWon" layoutX="203.0" layoutY="86.0" text="You won the game!">
+         <font>
+            <Font name="Bradley Hand Bold" size="24.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblMonstersKilledPrompt" layoutX="133.0" layoutY="230.0" text="Monsters Killed:">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblTotalDamageDonePrompt" layoutX="133.0" layoutY="262.0" text="Total Damage Done:">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblRoomsVisitedPrompt" layoutX="133.0" layoutY="297.0" text="Rooms Visited:">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblMonstersKilled" layoutX="315.0" layoutY="224.0" text="..">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblDamageDone" layoutX="315.0" layoutY="262.0" text="..">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Label fx:id="lblRoomsVisited" layoutX="315.0" layoutY="297.0" text="..">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+      <Button fx:id="btnViewPlayerStats" layoutX="241.0" layoutY="143.0" mnemonicParsing="false" onAction="#onViewPlayerStatsClicked" style="-fx-background-color: midnightblue; -fx-border-color: skyblue;" text="View Player Stats" textAlignment="CENTER">
+         <font>
+            <Font name="Verdana" size="12.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45490196347236633" green="0.8274509906768799" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill></Button>
+      <Button fx:id="btnPlayAgain" layoutX="168.0" layoutY="336.0" mnemonicParsing="false" onAction="#onPlayAgainClicked" style="-fx-background-color: midnightblue; -fx-border-color: forestgreen;" text="PLAY AGAIN" textFill="WHITE">
+         <font>
+            <Font name="Marker Felt Thin" size="20.0" />
+         </font></Button>
+      <Button fx:id="btnQuit" layoutX="315.0" layoutY="336.0" mnemonicParsing="false" onAction="#onQuitClicked" style="-fx-background-color: midnightblue; -fx-border-color: red;" text="QUIT GAME" textFill="WHITE">
+         <font>
+            <Font name="Marker Felt Thin" size="20.0" />
+         </font>
+      </Button>
+      <Label fx:id="lblPlayerStatisticsHeader" layoutX="240.0" layoutY="189.0" text="Player Statistics" underline="true">
+         <font>
+            <Font name="Courier" size="13.0" />
+         </font>
+         <textFill>
+            <LinearGradient endX="1.0" endY="1.0">
+               <stops>
+                  <Stop>
+                     <color>
+                        <Color red="0.45370370149612427" green="0.8270061612129211" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="0.007532956685499058">
+                     <color>
+                        <Color red="0.45490196347236633" green="0.8274509906768799" blue="1.0" />
+                     </color>
+                  </Stop>
+                  <Stop offset="1.0">
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </Stop>
+               </stops>
+            </LinearGradient>
+         </textFill>
+      </Label>
+   </children>
+</AnchorPane>

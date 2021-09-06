@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.PlayerDeadController">
+   <children>
+      <Label layoutX="223.0" layoutY="60.0" text="Player has Died" textFill="#f80000">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="186.0" layoutY="164.0" text="Would you like to end the game or restart?" />
+      <Button fx:id="btnRestart" layoutX="195.0" layoutY="208.0" mnemonicParsing="false" onAction="#restartClicked" text="Restart" />
+      <Button fx:id="btnEnd" layoutX="348.0" layoutY="208.0" mnemonicParsing="false" onAction="#endClicked" text="End" />
+   </children>
+</AnchorPane>

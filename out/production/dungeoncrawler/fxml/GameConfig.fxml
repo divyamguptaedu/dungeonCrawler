@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.GameConfigController">
+   <children>
+      <Pane fx:id="paneScene" prefHeight="551.0" prefWidth="550.0">
+         <children>
+            <Label fx:id="lblSceneTitle" layoutX="217.0" layoutY="39.0" text="Configuration Screen" />
+            <Label fx:id="lblNamePrompt" layoutX="41.0" layoutY="81.0" text="Enter Name" />
+            <TextField fx:id="txtName" layoutX="122.0" layoutY="76.0" onKeyPressed="#onNameEntered" prefHeight="17.0" prefWidth="115.0" />
+            <Label fx:id="lblGameDifficulty" layoutX="206.0" layoutY="154.0" text="Select Game Difficulty" />
+            <RadioButton fx:id="radEasy" layoutX="114.0" layoutY="202.0" mnemonicParsing="false" onAction="#onRadEasyClicked" text="Easy" />
+            <RadioButton fx:id="radMedium" layoutX="217.0" layoutY="202.0" mnemonicParsing="false" onAction="#onRadMediumClicked" text="Medium" />
+            <RadioButton fx:id="radHard" layoutX="331.0" layoutY="202.0" mnemonicParsing="false" onAction="#onRadHardClicked" text="Hard" />
+            <Label fx:id="lblDisplayPlayerName" layoutX="163.0" layoutY="349.0" text="Player Name: " />
+            <Label fx:id="lblDisplayGameDifficulty" layoutX="98.0" layoutY="386.0" text="Game Difficulty Selected:" />
+            <Button fx:id="startGame" layoutX="226.0" layoutY="497.0" mnemonicParsing="false" onAction="#startGameClicked" text="Start Game" textAlignment="CENTER" />
+            <RadioButton fx:id="rifle" layoutX="115.0" layoutY="299.0" mnemonicParsing="false" onAction="#rifleSelected" text="Rifle">
+               <toggleGroup>
+                  <ToggleGroup fx:id="WC" />
+               </toggleGroup></RadioButton>
+            <RadioButton fx:id="sword" layoutX="216.0" layoutY="299.0" mnemonicParsing="false" onAction="#swordSelected" text="Sword" toggleGroup="$WC" />
+            <RadioButton fx:id="bazooka" layoutX="332.0" layoutY="299.0" mnemonicParsing="false" onAction="#bazookaSelected" text="Bazooka" toggleGroup="$WC" />
+            <Label layoutX="208.0" layoutY="249.0" text="Choose your weapon" />
+            <Label fx:id="weaponChoice" layoutX="183.0" layoutY="421.0" text="Weapon:" />
+         </children></Pane>
+   </children>
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+   </rowConstraints>
+</GridPane>
